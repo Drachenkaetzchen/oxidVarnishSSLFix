@@ -12,7 +12,7 @@ cd modules
 git clone https://github.com/felicitus/oxidVarnishSSLFix.git
 ```
 
-Yes, I'm not going to provide a `COPY_THIS directory`, as I find the concept utterly awkward.
+Yes, I'm not going to provide a `COPY_THIS` directory, as I find the concept utterly awkward.
 
 # Technical Information
 
