@@ -24,3 +24,7 @@ This module extends the `oxConfig::_checkSsl` method and adds an additional chec
 
 There is a fragment of code in OXID CE which checks if `HTTP_X_FORWARDED_SERVER` is set to `ssl`, however,
 `HTTP_X_FORWARDED_SERVER` is probably the wrong variable to check.
+
+Additionally, the module changes the URL of widgets to always be non-SSL as Varnish can't do SSL and in turn widget
+requests can't be done by Varnish, which breaks the whole caching mechanism (this is only for OXID EE with additional
+license for the Varnish option).
